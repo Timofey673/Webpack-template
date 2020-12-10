@@ -1,0 +1,81 @@
+.btn-filter {
+  @extend .btn;
+  position: absolute;
+  top: 125px;
+  right: 0;
+  width: 150px;
+  height: 47px;
+  border: 1px solid $font-color-white;
+  font-family: PT Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $font-color-white;
+  padding-right: 2px;
+  img {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+}
+.filter-container {
+  position: absolute;
+  top: 289px;
+  right: 0;
+  width: 360px;
+  background: $background-color-product;
+  transform: translateX(100vw);
+  opacity: 0;
+  transition: 0.3s;
+  padding: 10px;
+  label {
+    font-family: $font-subtitle;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #filterBrand {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.6);
+    font-family: $font-stack;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21;
+    color: $font-color-white;
+    padding-left: 20px;
+  }
+  .btn-primary {
+    @extend .btn;
+    width: 150px;
+    height: 47px;
+    border: 1px solid $font-color-white;
+    font-family: PT Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $font-color-white;
+  }
+  .button-group {
+    // @extend .form-group;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  .label-top {
+    margin-top: 20px;
+  }
+}
+.filter-show {
+    transform: translateX(390px);
+    transition: 0.3s;
+    opacity: 1;
+  }

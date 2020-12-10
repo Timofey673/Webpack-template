@@ -1,0 +1,65 @@
+<% var data = {
+  title: "PORTEN",
+  author: "ETV"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<main>
+  <section class="main-container">
+    <div class="logo-box">
+      <h1 class="logo-header">porten</h1>
+      <p class="city">санкт-петербург</p>
+    </div>
+    <p class="logo-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor
+      pulvinar ut in.
+      Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper
+      ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.</p>
+  </section>
+  <section class="season-container">
+    <div class="season">
+      <h2 class="subheader">сезон 2020/21</h2>
+      <div class="d-flex pseudo-season"></div>
+    </div>
+    <div class="new-collection">
+      <h2 class="subheader">Новая коллекция</h2>
+      <button type="button" class="btn">Каталог</button>
+    </div>
+  </section>
+  <section class="collection-container">
+    <div class="collection-img"></div>
+    <div class="collection">
+      <h2 class="subheader">коллекция 2018</h2>
+      <p class="collection-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis
+        habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed
+        scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse
+        ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra
+        nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas.
+        Id aliquam a aliquam egestas leo orci pharetra sed diam.</p>
+      <button type="button" class="btn">посмотреть коллекцию</button>
+    </div>
+  </section>
+  <section class="new-container">
+    <button class="btn-filter">
+      <img
+        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0Ny40NiAyNDcuNDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Ik0yNDYuNzQ0LDEzLjk4NGMtMS4yMzgtMi42MjYtMy44ODEtNC4zMDEtNi43ODQtNC4zMDFINy41Yy0yLjkwMywwLTUuNTQ1LDEuNjc1LTYuNzg0LDQuMzAxICBjLTEuMjM4LDIuNjI2LTAuODUsNS43MywwLjk5Nyw3Ljk3bDg5LjM2MSwxMDguMzg0djk5Ljk0YzAsMi41OTUsMS4zNDEsNS4wMDUsMy41NDUsNi4zNzNjMS4yMDgsMC43NDksMi41NzksMS4xMjcsMy45NTUsMS4xMjcgIGMxLjEzNywwLDIuMjc4LTAuMjU5LDMuMzMtMC43OGw1MC4yMDgtMjQuODg1YzIuNTUxLTEuMjY0LDQuMTY1LTMuODYzLDQuMTY5LTYuNzFsMC4wOTgtNzUuMDYybDg5LjM2Ni0xMDguMzg4ICBDMjQ3LjU5MywxOS43MTQsMjQ3Ljk4MiwxNi42MDksMjQ2Ljc0NCwxMy45ODR6IE0xNDMuMDk3LDEyMi44NzNjLTEuMTA1LDEuMzQtMS43MTEsMy4wMjMtMS43MTMsNC43NjFsLTAuMDk2LDczLjEwMyAgbC0zNS4yMTMsMTcuNDUzdi05MC41NDZjMC0xLjc0MS0wLjYwNS0zLjQyOC0xLjcxMy00Ljc3MUwyMy40MDQsMjQuNjgyaDIwMC42NTFMMTQzLjA5NywxMjIuODczeiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
+      Filter
+    </button>
+    <h2 class="subheader">новые поступления</h2>
+    <div class="new-items"></div>
+    <button type="button" class="btn-new-collection">More...</button>
+    <%= _.template(require('./../includes/filter.html').default)(data) %>
+  </section>
+  <div class="light-container">
+    <section class="brands">
+      <h2 class="subheader">наши бренды</h2>
+      <div class="row">
+        <a href="#" class="col-md-3"><img src="/src/img/brands.jpg" alt=""></a>
+        <a href="#" class="col-md-3"><img src="/src/img/brands.jpg" alt=""></a>
+        <a href="#" class="col-md-3"><img src="/src/img/brands.jpg" alt=""></a>
+        <a href="#" class="col-md-3"><img src="/src/img/brands.jpg" alt=""></a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

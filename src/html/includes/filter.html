@@ -1,0 +1,32 @@
+<div class="filter-container">
+    <form class="filter-submit">
+        <div class="form-group">
+            <label for="filterBrand">Торговая марка</label>
+            <input type="text" class="form-control" id="filterBrand" placeholder="Торговая марка">
+        </div>
+        <label class="label-top" for="filterSex">Пол</label>
+        <div class="form-group" id="filterSex">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="filterMale" value="1">
+                <label class="form-check-label" for="filterMale">М</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="filterFemale" value="2">
+                <label class="form-check-label" for="filterFemale">Ж</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="filterUnisex" value="3">
+                <label class="form-check-label" for="filterUnisex">Unisex</label>
+            </div>
+        </div>
+        <label class="label-top" for="filterPrice">Ценовой диапазон: <b>шаг 10 000 руб.</b></label>
+        <div class="form-group" id="filterPrice">
+            <input id="my-slider" type="text" class="span2" value="" data-slider-min="10000" data-slider-max="200000"
+                data-slider-step="10000" data-slider-value="[50000,100000]" data-slider-range="true" /> <b>200 000 руб.</b>
+        </div>
+        <div class="button-group">
+            <input class="btn-primary col-sm-5 btn-apply" type="button" value="apply">
+            <input class="btn-primary col-sm-5 btn-clear" type="reset" value="Reset">
+        </div>
+    </form>
+</div>
